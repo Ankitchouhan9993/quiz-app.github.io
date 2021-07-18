@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-color: #d0cceb;
+    padding: 10%;
+}
+main{
+    height: 120%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.quiz-container{
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+    background-color:white;
+    max-width: 100%;
+    height: 100%;
+    padding: 5%;
+    border-radius: 10px;
+}
+.result{
+    display: block;
+    width: 100%;
+}
+.choices{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+}
+.choices>li{
+    margin-top: 20px; 
+    font-size: 20px;
+}
+#submit{
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
+    border: none;
+    font-size: 20px;
+    background-color:lightblue;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+label{
+    margin-left:10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+#submit,.restart:hover{
+    background-color: darkblue;
+    color: white;
+    
+}
+hr{
+    z-index: 200;
+    width: 100%;
+}
+#question{
+    display: block;
+    height: 100px;
+    font-size: 30px;
+    font-style: italic;
+    text-align: left;
+}
+#q-no{
+    text-decoration: underline;
+    color: crimson;
+}
+.restart{
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 250px;
+    padding: 1rem;
+    border: none;
+    font-size: 10px;
+    background-color:lightblue;
+    border-radius:10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+@media screen and (orientation:portrait){
+main{
+    margin-top: 100px;
+    height: 300px;
+}
+label{
+    cursor: pointer;
+    font-size: 20px;
+}
+body{
+    padding: 5%;
+}
+.restart{
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+}
+ 
